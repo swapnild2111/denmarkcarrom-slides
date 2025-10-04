@@ -1,77 +1,130 @@
 <!-- Ref: https://startbootstrap.com/template/shop-homepage -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="DKCF" />
-        <meta name="author" content="Swapnil Deshpande" />
-        <title>DKCA - Denmark Carrom Federation - Presentations</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon-32x32.svg" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#!">Denmark Carrom Federation</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="nav-item d-none"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                    <li class="nav-item d-none"><a class="nav-link" href="#!">Contact us</a></li>
-                    <li class="nav-item px-2"><a href="https://github.com/DenmarkCarromFederation/dkcf" target="blank"><i class="fa-brands fa-github"></i></a></li>
-                    <li class="nav-item px-2"><a href="https://facebook.com/DKCarromAssociation" target="blank"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li class="nav-item px-2"><a href="https://chat.whatsapp.com/D2tRiCFvaOX0CAkCWmkSAS" target="blank"><i class="fa-brands fa-square-whatsapp"></i></a></li>
-                    <li class="nav-item px-2"><a href="https://m.me/DKCarromAssociation" target="blank"><i class="fa-brands fa-facebook-messenger"></i></a></li>
-                    <li class="nav-item px-2"><a href="mailto:carrom.denmark@gmail.com" target="blank"><i class="fa-solid fa-envelope"></i></a></li>
-                    <li class="nav-item px-2"><a href="https://sol4.metapensiero.it/lit/club/7abfbacec8ed11eebfe46162688db8a6" target="blank"><i class="fa-solid fa-trophy"></i></a></li>
-                </ul>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="DKCF" />
+    <meta name="author" content="Swapnil Deshpande" />
+    <title>DKCF - Denmark Carrom Federation - Presentations</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon-32x32.svg" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Custom styles for card image alignment -->
+    <style>
+        .card-img-top {
+            height: 180px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-top-left-radius: calc(0.375rem - 1px);
+            border-top-right-radius: calc(0.375rem - 1px);
+        }
+
+        /* Ensure consistent card heights */
+        .card {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#!">Denmark Carrom Federation</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item d-none"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                <li class="nav-item d-none"><a class="nav-link" href="#!">Contact us</a></li>
+                <li class="nav-item px-2"><a href="https://facebook.com/DenmarkcarromFederation" target="blank"><i
+                            class="fa-brands fa-facebook"></i></a></li>
+                <li class="nav-item px-2"><a href="https://www.youtube.com/@denmarkcarromfederation" target="blank"><i
+                            class="fa-brands fa-youtube"></i></a></li>
+                <li class="nav-item px-2"><a href="https://chat.whatsapp.com/D2tRiCFvaOX0CAkCWmkSAS" target="blank"><i
+                            class="fa-brands fa-square-whatsapp"></i></a></li>
+                <li class="nav-item px-2"><a href="https://m.me/DenmarkcarromFederation" target="blank"><i
+                            class="fa-brands fa-facebook-messenger"></i></a></li>
+                <li class="nav-item px-2"><a href="mailto:carrom.denmark@gmail.com" target="blank"><i
+                            class="fa-solid fa-envelope"></i></a></li>
+                <li class="nav-item px-2"><a
+                        href="https://sol4.metapensiero.it/lit/club/7abfbacec8ed11eebfe46162688db8a6" target="blank"><i
+                            class="fa-solid fa-trophy"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="bg-dark py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder">Denmark Carrom Federation</h1>
+                <p class="lead fw-normal text-white-50 mb-0">Passionate to spread love for Carrom!</p>
             </div>
-        </nav>
-        <!-- Header-->
-        <header class="bg-dark py-5">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">Denmark Carrom Federation</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">Passionate to spread love for Carrom!</p>
+        </div>
+    </header>
+    <!-- Section-->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/dkcf-logo.png" alt="DKCF" />
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Introduction</h5>
+                                Introduction, Purpose, Mission & Vision
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" target="blank"
+                                    href="slides/dkcf-intro/index.html">Slide show</a></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </header>
-        <!-- Section-->
-        <section class="py-5">
-            <div class="container px-4 px-lg-5 mt-5">
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <img class="card-img-top" src="assets/logo_whatsapp.png" alt="..." />
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <h5 class="fw-bolder">DKCF Introduction</h5>
-                                    Introduction, Purpose, Mission & Vision
-                                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/carrom_bw.jpeg" alt="Carrom For Beginners" />
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Carrom For Beginners</h5>
+                                Let's learn Carrom from scratch!
                             </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" target="blank" href="slides/dkcf-intro/index.html">Slide show</a></div>
-                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" target="blank"
+                                    href="slides/carrom-beginner/index.html">Slide show</a></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; <a href="https://carrom.dk">carrom.dk</a> 2024</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- Font awesome -->
-        <script src="https://kit.fontawesome.com/66442699cb.js" crossorigin="anonymous"></script>
-    </body>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; <a href="https://carrom.dk">carrom.dk</a> 2025</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/66442699cb.js" crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -1,40 +1,135 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+	<title>DKCF Introduction - Denmark Carrom Federation</title>
+	<!-- Favicon-->
+	<link rel="icon" type="image/x-icon" href="../../assets/favicon-32x32.svg" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/serif.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+	<!-- Custom styles for responsive content -->
+	<style>
+		.reveal .slides section {
+			overflow: visible !important;
+			box-sizing: border-box;
+		}
+
+		.reveal h1,
+		.reveal h2,
+		.reveal h3 {
+			word-wrap: break-word;
+			hyphens: auto;
+		}
+
+		.reveal ul,
+		.reveal ol {
+			max-width: 90%;
+			margin: 0 auto;
+		}
+
+		.reveal li {
+			margin-bottom: 0.5em;
+			line-height: 1.4;
+		}
+
+		@media (max-width: 768px) {
+			.reveal h1 {
+				font-size: 2em !important;
+			}
+
+			.reveal h2 {
+				font-size: 1.5em !important;
+			}
+
+			.reveal h3 {
+				font-size: 1.2em !important;
+			}
+
+			.reveal p,
+			.reveal li {
+				font-size: 0.8em !important;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!-- Markdown content will be loaded here -->
+			<section data-markdown="slides/intro.md" data-separator="^---$" data-separator-vertical="^--$"
+				data-separator-notes="^Note:" data-charset="utf-8">
+			</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+			// Responsive settings to prevent content overflow
+			width: "100%",
+			height: "100%",
+			margin: 0.04,
+			minScale: 0.2,
+			maxScale: 2.0,
+
+			// Better content fitting
+			center: true,
+			touch: true,
+			loop: false,
+			rtl: false,
+			navigationMode: 'default',
+			shuffle: false,
+			fragments: true,
+			fragmentInURL: false,
+			embedded: false,
+			help: true,
+			pause: true,
+			showNotes: false,
+			autoPlayMedia: null,
+			preloader: true,
+			autoSlide: 0,
+			autoSlideStoppable: true,
+			autoSlideMethod: null,
+			defaultTiming: null,
+			mouseWheel: false,
+			hideInactiveCursor: true,
+			hideCursorTime: 5000,
+			hideAddressBar: true,
+			previewLinks: false,
+			transition: 'slide',
+			transitionSpeed: 'default',
+			backgroundTransition: 'fade',
+			viewDistance: 3,
+			mobileViewDistance: 2,
+			parallaxBackgroundImage: '',
+			parallaxBackgroundSize: '',
+			parallaxBackgroundRepeat: '',
+			parallaxBackgroundPosition: '',
+			parallaxBackgroundHorizontal: null,
+			parallaxBackgroundVertical: null,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
 </html>
