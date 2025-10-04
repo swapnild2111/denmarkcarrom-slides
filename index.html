@@ -46,10 +46,16 @@
 
         /* Header enhancements */
         .navbar-brand-logo {
-            height: 40px;
+            height: 60px;
             width: auto;
             margin-right: 10px;
             vertical-align: middle;
+        }
+
+        /* Make navbar taller to accommodate larger logo */
+        .navbar {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
         }
 
         .header-logo {
@@ -68,6 +74,62 @@
             box-shadow: none;
         }
 
+        /* Desktop social icons in navbar */
+        .navbar .nav-item a {
+            color: #6c757d;
+            font-size: 1.3em;
+            text-decoration: none;
+            padding: 8px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            transition: all 0.3s ease;
+            background: rgba(108, 117, 125, 0.1);
+        }
+
+        .navbar .nav-item a:hover {
+            color: #fff;
+            background: #007bff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+        }
+
+        /* Specific colors for different social platforms */
+        .navbar .nav-item a[href*="facebook"]:hover {
+            background: #1877f2;
+            box-shadow: 0 4px 12px rgba(24, 119, 242, 0.3);
+        }
+
+        .navbar .nav-item a[href*="youtube"]:hover {
+            background: #ff0000;
+            box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+        }
+
+        .navbar .nav-item a[href*="whatsapp"]:hover {
+            background: #25d366;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+        }
+
+        .navbar .nav-item a[href*="messenger"]:hover {
+            background: #0084ff;
+            box-shadow: 0 4px 12px rgba(0, 132, 255, 0.3);
+        }
+
+        .navbar .nav-item a[href*="mailto"]:hover {
+            background: #ea4335;
+            box-shadow: 0 4px 12px rgba(234, 67, 53, 0.3);
+        }
+
+        .navbar .nav-item a[href*="tournament"]:hover {
+            background: #ffd700;
+            color: #333 !important;
+            box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+        }
+
+        /* Mobile social icons */
         .social-links {
             display: flex;
             flex-wrap: wrap;
@@ -79,11 +141,56 @@
         .social-links a {
             color: #6c757d;
             font-size: 1.5em;
-            transition: color 0.3s ease;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            transition: all 0.3s ease;
+            background: rgba(108, 117, 125, 0.1);
+            border: 2px solid transparent;
         }
 
         .social-links a:hover {
-            color: #495057;
+            color: #fff;
+            background: #007bff;
+            transform: scale(1.1);
+            border-color: #007bff;
+        }
+
+        /* Mobile specific platform colors */
+        .social-links a[href*="facebook"]:hover {
+            background: #1877f2;
+            border-color: #1877f2;
+        }
+
+        .social-links a[href*="youtube"]:hover {
+            background: #ff0000;
+            border-color: #ff0000;
+        }
+
+        .social-links a[href*="whatsapp"]:hover {
+            background: #25d366;
+            border-color: #25d366;
+        }
+
+        .social-links a[href*="messenger"]:hover {
+            background: #0084ff;
+            border-color: #0084ff;
+        }
+
+        .social-links a[href*="mailto"]:hover {
+            background: #ea4335;
+            border-color: #ea4335;
+        }
+
+        .social-links a[href*="tournament"]:hover {
+            background: #ffd700;
+            border-color: #ffd700;
+            color: #333 !important;
         }
 
         /* Mobile responsive adjustments */
@@ -214,7 +321,7 @@
     <!-- Section-->
     <section class="py-5">
         <div class="container px-4 px-lg-5 mt-5">
-            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                 <div class="col mb-5">
                     <div class="card h-100">
                         <img class="card-img-top" src="assets/dkcf-logo.png" alt="DKCF" />
