@@ -1,0 +1,103 @@
+/**
+ * Denmark Carrom Federation - Shared Responsive Styles for Reveal.js Presentations
+ * This file contains common responsive styling that applies to all presentations
+ */
+
+/* Base responsive content styles */
+.reveal .slides section {
+    overflow: visible !important;
+    box-sizing: border-box;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.reveal ul,
+.reveal ol {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.reveal li {
+    margin-bottom: 0.5em;
+    line-height: 1.4;
+}
+
+/* Enhanced mobile responsiveness */
+@media (max-width: 768px) {
+    .reveal h1 {
+        font-size: 1.6em !important;
+    }
+
+    .reveal h2 {
+        font-size: 1.2em !important;
+    }
+
+    .reveal h3 {
+        font-size: 1em !important;
+    }
+
+    .reveal p,
+    .reveal li {
+        font-size: 0.7em !important;
+        line-height: 1.4 !important;
+    }
+
+    .reveal .slides section {
+        padding: 20px !important;
+    }
+
+    .reveal ul,
+    .reveal ol {
+        max-width: 95% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .reveal h1 {
+        font-size: 1.5em !important;
+    }
+
+    .reveal h2 {
+        font-size: 1.2em !important;
+    }
+
+    .reveal h3 {
+        font-size: 1em !important;
+    }
+
+    .reveal p,
+    .reveal li {
+        font-size: 0.8em !important;
+    }
+
+    .reveal .slides section {
+        padding: 15px !important;
+    }
+}
+
+/* Ultra-small devices (under 460px) */
+@media (max-width: 460px) {
+    .reveal {
+        font-size: 28px !important;
+    }
+
+    .reveal .slides {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .reveal .slides section {
+        width: 100% !important;
+        height: auto !important;
+        padding: 10px !important;
+    }
+
+    .reveal .progress {
+        height: 3px !important;
+    }
+}

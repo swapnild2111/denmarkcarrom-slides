@@ -1,4 +1,4 @@
-# Denmark Carrom Federation ( DKCF )
+# Denmark Carrom Federation
 
 **Passionate to spread love for Carrom!**
 
@@ -10,7 +10,7 @@ The **Denmark Carrom Federation (DKCF)** is the official governing body for Carr
 
 We are dedicated to promoting, developing, and organizing the beautiful game of Carrom across the nation.
 
----
+--
 
 ## 🎯 Our Mission
 
@@ -20,7 +20,7 @@ We are dedicated to promoting, developing, and organizing the beautiful game of 
 - **🌍 Represent Denmark** in European and World Championships
 - **📚 Educate** new players through workshops and training camps
 
----
+--
 
 ## 👁️ Our Vision
 
