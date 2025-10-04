@@ -41,22 +41,67 @@
             line-height: 1.4;
         }
 
+        /* Enhanced mobile responsiveness */
         @media (max-width: 768px) {
             .reveal h1 {
-                font-size: 2em !important;
+                font-size: 1.8em !important;
             }
 
             .reveal h2 {
-                font-size: 1.5em !important;
+                font-size: 1.4em !important;
             }
 
             .reveal h3 {
+                font-size: 1.1em !important;
+            }
+
+            .reveal p,
+            .reveal li {
+                font-size: 0.9em !important;
+                line-height: 1.5 !important;
+            }
+
+            .reveal .slides section {
+                padding: 20px !important;
+            }
+
+            .reveal ul,
+            .reveal ol {
+                max-width: 95% !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .reveal h1 {
+                font-size: 1.5em !important;
+            }
+
+            .reveal h2 {
                 font-size: 1.2em !important;
+            }
+
+            .reveal h3 {
+                font-size: 1em !important;
             }
 
             .reveal p,
             .reveal li {
                 font-size: 0.8em !important;
+            }
+
+            .reveal .slides section {
+                padding: 15px !important;
+            }
+        }
+
+        /* Mobile navigation hints */
+        @media (max-width: 768px) {
+            .reveal .controls {
+                display: none !important;
+            }
+
+            .reveal .progress {
+                height: 5px !important;
             }
         }
     </style>
@@ -118,7 +163,7 @@
             transitionSpeed: 'default',
             backgroundTransition: 'fade',
             viewDistance: 3,
-            mobileViewDistance: 2,
+            mobileViewDistance: 1,
             parallaxBackgroundImage: '',
             parallaxBackgroundSize: '',
             parallaxBackgroundRepeat: '',

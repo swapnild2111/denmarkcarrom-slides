@@ -26,6 +26,14 @@
             border-top-right-radius: calc(0.375rem - 1px);
         }
 
+        /* Specific styling for DKCF logo to prevent border touching */
+        .card-img-top[src*="dkcf-logo.png"] {
+            height: 180px;
+            object-fit: contain;
+            padding: 30px;
+            background-color: #f8f9fa;
+        }
+
         /* Ensure consistent card heights */
         .card {
             transition: transform 0.3s ease-in-out;
@@ -35,6 +43,82 @@
             transform: translateY(-5px);
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         }
+
+        /* Header enhancements */
+        .navbar-brand-logo {
+            height: 40px;
+            width: auto;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .header-logo {
+            height: 80px;
+            width: auto;
+            margin-bottom: 20px;
+        }
+
+        /* Hamburger menu styling */
+        .navbar-toggler {
+            border: none;
+            padding: 0.25rem 0.5rem;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            padding: 15px 0;
+        }
+
+        .social-links a {
+            color: #6c757d;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #495057;
+        }
+
+        /* Mobile responsive adjustments */
+        @media (max-width: 768px) {
+            .header-logo {
+                height: 60px;
+            }
+
+            .display-4 {
+                font-size: 2rem !important;
+            }
+
+            .social-links {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-logo {
+                height: 50px;
+            }
+
+            .display-4 {
+                font-size: 1.5rem !important;
+            }
+
+            .social-links {
+                grid-template-columns: repeat(3, 1fr);
+                max-width: 250px;
+            }
+        }
     </style>
 </head>
 
@@ -42,27 +126,80 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#!">Denmark Carrom Federation</a>
+            <a class="navbar-brand d-flex align-items-center" href="#!">
+                <img src="assets/dkcf-logo.png" alt="DKCF Logo" class="navbar-brand-logo">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item d-none"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                <li class="nav-item d-none"><a class="nav-link" href="#!">Contact us</a></li>
-                <li class="nav-item px-2"><a href="https://facebook.com/DenmarkcarromFederation" target="blank"><i
-                            class="fa-brands fa-facebook"></i></a></li>
-                <li class="nav-item px-2"><a href="https://www.youtube.com/@denmarkcarromfederation" target="blank"><i
-                            class="fa-brands fa-youtube"></i></a></li>
-                <li class="nav-item px-2"><a href="https://chat.whatsapp.com/D2tRiCFvaOX0CAkCWmkSAS" target="blank"><i
-                            class="fa-brands fa-square-whatsapp"></i></a></li>
-                <li class="nav-item px-2"><a href="https://m.me/DenmarkcarromFederation" target="blank"><i
-                            class="fa-brands fa-facebook-messenger"></i></a></li>
-                <li class="nav-item px-2"><a href="mailto:carrom.denmark@gmail.com" target="blank"><i
-                            class="fa-solid fa-envelope"></i></a></li>
-                <li class="nav-item px-2"><a
-                        href="https://sol4.metapensiero.it/lit/club/7abfbacec8ed11eebfe46162688db8a6" target="blank"><i
-                            class="fa-solid fa-trophy"></i></a></li>
-            </ul>
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!-- Desktop: Show social links inline -->
+                    <li class="nav-item d-none d-lg-block px-2">
+                        <a href="https://facebook.com/DenmarkcarromFederation" target="_blank" title="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block px-2">
+                        <a href="https://www.youtube.com/@denmarkcarromfederation" target="_blank" title="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block px-2">
+                        <a href="https://chat.whatsapp.com/D2tRiCFvaOX0CAkCWmkSAS" target="_blank" title="WhatsApp">
+                            <i class="fa-brands fa-square-whatsapp"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block px-2">
+                        <a href="https://m.me/DenmarkcarromFederation" target="_blank" title="Messenger">
+                            <i class="fa-brands fa-facebook-messenger"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block px-2">
+                        <a href="mailto:carrom.denmark@gmail.com" target="_blank" title="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block px-2">
+                        <a href="https://sol4.metapensiero.it/lit/club/7abfbacec8ed11eebfe46162688db8a6" target="_blank"
+                            title="Tournament">
+                            <i class="fa-solid fa-trophy"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Mobile: Show social links in collapsible menu -->
+                <div class="d-lg-none">
+                    <hr class="my-3">
+                    <div class="text-center">
+                        <h6 class="text-muted mb-3">Connect with us</h6>
+                        <div class="social-links">
+                            <a href="https://facebook.com/DenmarkcarromFederation" target="_blank" title="Facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@denmarkcarromfederation" target="_blank" title="YouTube">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="https://chat.whatsapp.com/D2tRiCFvaOX0CAkCWmkSAS" target="_blank" title="WhatsApp">
+                                <i class="fa-brands fa-square-whatsapp"></i>
+                            </a>
+                            <a href="https://m.me/DenmarkcarromFederation" target="_blank" title="Messenger">
+                                <i class="fa-brands fa-facebook-messenger"></i>
+                            </a>
+                            <a href="mailto:carrom.denmark@gmail.com" target="_blank" title="Email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                            <a href="https://sol4.metapensiero.it/lit/club/7abfbacec8ed11eebfe46162688db8a6"
+                                target="_blank" title="Tournament">
+                                <i class="fa-solid fa-trophy"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
     <!-- Header-->
